@@ -20,6 +20,17 @@
  */
 function sumOdds(numbers) {
   // Your code here
+  let Odds = 0;
+  numbers.forEach((el) => {
+    if (el % 2 != 0) {
+      console.log(el);
+      Odds = Odds + el;
+    }
+  });
+  console.log(Odds);
+  return Odds;
+
+  //////const subtraction = (firstNum, secondNum) => firstNum - secondNum;
 }
 // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
@@ -36,9 +47,16 @@ function sumOdds(numbers) {
  * Hint: You need to turn the string into an array first
  * Another Hint: Use string methods to make it case-insensitive
  */
+
 function characterCount(string, c) {
-  // Your code here
+  let arra = [];
+  string.forEach((charact) => (arr = string.split("")));
+  let ces = 0;
+  arr.forEach((arr) => {
+    if (arr == c) return ces + c;
+  });
 }
+
 // console.log(characterCount("Character Count is clever", "c"));
 
 /**
@@ -106,6 +124,13 @@ function abbreviate(firstName, lastName) {
  */
 function isUpperCase(string) {
   // Your code here
+  // function CAP(namess) {
+  //   let capital = 0;
+  //   namess.forEach((el1) => (capital = text.toUpperCase(el1)));
+  //   console.log("capital");
+  // }
+  // let arr = ("abbas", "AlHaddad");
+  // CAP(arr);
 }
 
 // console.log(isUpperCase("JCREW"));
